@@ -1,0 +1,671 @@
+/*
+Theme Name: Shoreditch Child Theme
+Theme URI:
+Desciption: A child theme  of the shoreditch theme
+Author: Nik O'Keefe
+Author URI: http://nikwillok.com
+Template: Shoreditch
+Version: 0.1.0
+*/
+
+@import url("../shoreditch/style.css");
+
+/* Typography */
+
+
+body,
+button,
+input,
+select,
+textarea,
+.author-title,
+.comment-reply-title small {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	color: #2c313f;
+}
+
+h1 {
+	display: none;
+}
+
+article {
+	padding: 0;
+}
+
+h2 {
+	font-weight: 400;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title,
+.post-navigation .post-title,
+.author-name,
+.no-comments {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #2c313f;
+	font-size: 20px;
+	font-weight: none;
+	text-decoration: none;
+}
+
+.current-grid {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: none;
+	text-decoration: none;
+}
+
+a {
+	box-shadow: none;
+}
+
+h2 a {
+	font-size: 1.25rem;
+	text-decoration: none;
+	box-shadow: 0;
+}
+
+.entry-content a {
+	box-shadow: none;
+}
+
+
+.rt-detail {
+	padding: 0;
+}
+
+h3 {
+	margin-top: 1em;
+}
+
+aside #secondary {
+    margin-top: 40em;
+}
+
+.entry-hero-wrapper, 
+.hentry-wrapper, 
+.site-content-wrapper, 
+.site-footer-wrapper, 
+.site-header-wrapper, 
+.site-content-wrapper 
+.has-post-thumbnail,
+.entry-header-wrapper, 
+.widget-area-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    max-width: 75rem;
+    width: 80%;
+    width: calc(100% - 3em);
+}
+
+.entry-content, .entry-summary {
+    margin: 0 0;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+## Main Menu
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 896px) {
+	.main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul {
+		left: 0;
+		right: 0;
+	}
+
+	.main-navigation ul ul li {
+		border-bottom: 0;
+		margin: 0;
+		width: 100%;
+	}
+}
+
+
+.main-navigation .primary-menu {
+	border-bottom: 0;
+}
+
+.main-navigation ul {
+	color: #f3f3f3;
+	list-style: none;
+	margin: 0;
+}
+
+.main-navigation.toggled-on ul,
+.main-navigation.toggled-on ul.toggled-on {
+	display: block;
+}
+
+.main-navigation.toggled-on ul ul {
+	display: none;
+}
+
+.main-navigation .menu-item-has-children > a {
+	margin-right: 0;
+	position: relative;
+}
+
+.main-navigation a {
+	color: #2c313f;
+	display: block;
+	font-weight: normal;
+	padding: 0;
+}
+
+.main-navigation li {
+	border-top: 0;
+	position: relative;
+}
+
+.main-navigation ul ul {
+	background: #fff;
+	margin-left: 0;
+}
+
+
+
+
+
+/* the Post Grid */
+
+img.img-responsive {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.entry-title a {
+	margin: 0;
+	text-decoration: none;
+}
+
+h2.entry-title {
+	margin: 0;
+}
+
+
+
+/* Posts */
+
+time.entry-date.published {
+    display: none;
+}
+
+
+/* Content */
+
+
+
+.site-content-wrapper {
+	display: flex;
+}
+
+.hentry {
+	padding-bottom: 4.5em;
+	padding-top: 2em;
+}
+
+footer.entry-footer {
+    display: none;
+}
+
+
+/* Widgets */
+
+.widget {
+	margin: 1.5em 0 0.5em 0;
+	padding: 0;
+}
+
+h2.widget-title {
+	font-weight: unset;
+	font-size: 20px;
+	margin: 0.2em 0;
+}
+
+/* Footer */
+
+footer#colophon {
+    background: #EEEEEE;
+}
+
+
+/*------------------------------------------
+	SITE FOOTER  (< 768)
+---------------------------------------------*/
+
+.footer-menu {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+
+.footer-menu a {
+	display: block;
+	padding: 0.5em;
+}
+
+.footer-menu li {	
+	list-style-type: none;
+}
+
+.address-menu p {
+	margin: 0 0 0 1.7em;
+}
+
+
+.contact-menu-email {
+	margin: 0 0 0 1em;
+}
+
+.contact-menu-phone {
+	margin: 0 0 0 1.8em;
+}
+
+
+
+
+
+/*	________________________________________
+	min-width: 768
+	_________________________________________*/
+
+@media screen and (min-width: 768px) {
+
+	.widget-small h3, .widget-small .widgettitle, .widget-small .widget-title {
+		font-size: 20px;
+		/* font-size: 1.5625rem; */
+		line-height: 1.125;
+	}
+
+	.entry-footer, .entry-meta, .site-info, .widget-small, .widget-small input, .widget-small select, .widget-small textarea {
+		font-size: 14px;
+		font-size: 0.9rem;
+		line-height: 1.40625;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+	}
+
+
+	/*------------------------------------------
+	> 768px
+	
+	SITE FOOTER 
+	------------------------------------------*/
+	.site-footer-wrapper {
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+
+	}
+
+	.site-footer-wrapper {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1200px;
+		max-width: 75rem;
+		width: 80%;
+		width: calc(100% - 3em);
+	}
+
+	/* Footer Navigation Menu */
+
+	.footer-navigation ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.footer-navigation a {
+		display: block;
+		padding: 0.5em 1em;
+	}
+
+	/*.footer-navigation a:hover,
+	.footer-navigation a:focus {
+		outline: 1px solid #111;
+	}*/
+	
+	/* Footer Menus */
+	
+	.footer-menu {
+		display: block;
+		margin: 0;
+		padding: 0.5em 1em;
+		width: calc(33.3333% - 1em);
+	}
+	
+	
+	.footer-menu a {
+		display: block;
+		padding: 0.5em;
+	}
+	
+	/* Footer Social Media Menu */
+	
+	.social-menu {
+		margin: -1em 0 0 0;
+	}
+	
+	.social-menu ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.fab.fa-sm-facebook-square {
+		font-size: 40px;
+	}
+	
+	.fab.fa-sm-twitter-square {
+		font-size: 40px;
+	}
+	
+	.fab.fa-sm-instagram {
+		font-size: 40px;
+	}
+	
+	/* Footer Address Menu */
+	
+	.address-menu p {
+		margin: 0 0 0.5em 0;
+	}
+	
+	.map-menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.map-menu a {
+		display: block;
+		padding: 0;
+	}	
+
+}
+
+
+/*--------------------------------------------------------------
+## x >= 896px
+--------------------------------------------------------------*/
+@media screen and (min-width: 896px) {
+	body:not(.no-sidebar) .content-area {
+		-webkit-order: 1;
+		-ms-flex-order: 1;
+		order: 1;
+		padding-right: 1em;
+		width: 66.666666%;
+	}
+
+	.main-navigation ul ul {
+		/* border-style: solid; */
+		/* border-width: 1px 1px 0; */
+		float: right;
+		margin: 0;
+		position: absolute;
+		top: 100%;
+		left: -999em;
+		width: 12.5em;
+		z-index: 99999;
+	}
+}
+
+
+/*--------------------------------------------------------------
+## x >= 1200px
+--------------------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+
+	.site-main {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	/* Layout */
+	.single:not(.single-product) .content-area {
+		margin-bottom: 3em;
+	}
+
+
+	.archive .content-area,
+	.blog .content-area,
+	.search .content-area {
+		padding-bottom: 4.5em;
+
+	}
+
+	.site-content-wrapper .widget-area {
+		padding-top: 1em;
+		padding-bottom: 2em;
+	}
+
+	/* Past Exhibitions Post Grid */
+
+	.rt-holder {
+		max-width: 100%;
+	}
+
+	/* Exhibitions Page Post Grid align */
+	
+	article#post-79 {
+		width: 120%;
+		padding: 0;
+	}
+
+	article#post-542 {
+		width: 120%;
+	}
+
+	/* Future Post Grid align */
+
+	article#post-629 {
+		width: 100%;
+	}
+
+	/* About Page align */
+	
+	article #post-46 {
+		width: 100%;
+	}
+
+	/* Contact Page Align */
+
+	article#post-65 {
+		width: 75%;
+	}
+
+	/* Navigation */
+	.posts-navigation {
+		margin-top: 4.5em;
+	}
+
+	/* Content */
+	.hentry {
+		margin: 0 0 1em;
+		/*width: calc(48% - 1em);*/
+	}
+
+	.archive .content-area .hentry,
+	.blog .content-area .hentry,
+	.search .content-area .hentry {
+		padding-top: 4.5em;
+	}
+
+	.page-content {
+		padding-top: 6em;
+		padding-bottom: 4.5em;
+	}
+
+	.page-header {
+		margin-bottom: -4.5em;
+		padding-top: 6em;
+	}
+
+	.entry-hero-wrapper {
+		padding-bottom: 6em;
+		padding-top: 6em;
+	}
+
+	.entry-author {
+		margin-top: 4.5em;
+	}
+
+	.comments-area {
+		padding-bottom: 3em;
+	}
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* getting rid of blue color */
+
+blockquote {
+	border: #2c313f;
+}
+
+.main-navigation .primary-menu .current_page_item > a,
+.main-navigation .primary-menu .current-menu-item > a,
+.main-navigation .primary-menu .current_page_ancestor > a {
+	border-color: #2c313f;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+mark,
+ins,
+.search-form .search-submit:before,
+.widget-footer-top-area,
+.featured-content .flex-control-paging a:hover,
+.featured-content .flex-control-paging .flex-active,
+#infinite-footer,
+.site-main #infinite-handle span button,
+.site-main #infinite-handle span button:focus,
+.site-main #infinite-handle span button:hover,
+.button,
+.button.minimal:focus,
+.button.minimal:hover,
+.button.alt:focus,
+.button.alt:hover,
+.featured-content .hentry.has-post-thumbnail .button,
+.page-template-panel-page .hentry.has-post-thumbnail .button,
+.featured-content .hentry.has-post-thumbnail .button.minimal:focus,
+.featured-content .hentry.has-post-thumbnail .button.minimal:hover,
+.page-template-panel-page .hentry.has-post-thumbnail .button.minimal:focus,
+.page-template-panel-page .hentry.has-post-thumbnail .button.minimal:hover,
+.featured-content .hentry.has-post-thumbnail .button.alt:focus,
+.featured-content .hentry.has-post-thumbnail .button.alt:hover,
+.page-template-panel-page .hentry.has-post-thumbnail .button.alt:focus,
+.page-template-panel-page .hentry.has-post-thumbnail .button.alt:hover,
+.main-navigation .button.minimal a:focus,
+.main-navigation .button.alt a:focus {
+  	background: #7a7c84;
+}
+
+.widget-footer-top-area button,
+.widget-footer-top-area input[type="button"],
+.widget-footer-top-area input[type="reset"],
+.widget-footer-top-area input[type="submit"],
+.site-title a,
+.site-info a:focus,
+.site-info a:hover,
+a:focus,
+a:hover,
+.comment-metadata a:focus,
+.comment-metadata a:hover,
+.entry-footer a:focus,
+.entry-footer a:hover,
+.entry-header a:focus,
+.entry-header a:hover,
+.main-navigation .menu-item-has-children > a:after,
+.main-navigation a:focus,
+.main-navigation a:hover,
+.post-navigation a:focus .post-title,
+.post-navigation a:hover .post-title,
+.comment-navigation .nav-previous a:before,
+.posts-navigation .nav-previous a:before,
+.comment-navigation .nav-next a:after,
+.posts-navigation .nav-next a:after,
+.comment-reply-link:after,
+.site .wp-playlist-light a.wp-playlist-caption:focus,
+.site .wp-playlist-light a.wp-playlist-caption:hover,
+.infinite-loader .spinner div,
+.site .jetpack-social-navigation a:hover,
+.site .jetpack-social-navigation a:focus,
+.widget_akismet_widget .a-stats a:focus,
+.widget_akismet_widget .a-stats a:hover,
+.widget_goodreads div[class^="gr_custom_title"] a:focus,
+.widget_goodreads div[class^="gr_custom_title"] a:hover,
+.widget_goodreads div[class^=gr_custom_container] a:focus,
+.widget_goodreads div[class^=gr_custom_container] a:hover,
+.site .jetpack_widget_social_icons a:hover,
+.site .jetpack_widget_social_icons a:focus,
+.site .widget_wpcom_social_media_icons_widget a:hover,
+.site .widget_wpcom_social_media_icons_widget a:focus,
+.button.minimal,
+.button.alt,
+.widget-footer-top-area .button,
+.featured-content .hentry.has-post-thumbnail .button:focus,
+.featured-content .hentry.has-post-thumbnail .button:hover,
+.page-template-panel-page .hentry.has-post-thumbnail .button:focus,
+.page-template-panel-page .hentry.has-post-thumbnail .button:hover,
+.widget-footer-top-area .button.alt:focus,
+.widget-footer-top-area .button.alt:hover,
+.main-navigation .button.minimal a,
+.main-navigation .button.alt a {
+	color: #2c313f;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+select:focus,
+textarea:focus,
+.featured-content .flex-control-paging a {
+	outline: 2px solid #2c313f;
+}
